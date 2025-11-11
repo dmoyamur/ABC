@@ -1,0 +1,40 @@
+/* Fondo y tipografía */
+body {
+    background: linear-gradient(to bottom, #fffacd, #ffe4e1); /* Gradiente suave */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Título principal */
+h1#titulo {
+    font-size: 3em;
+    color: #ff6347;
+    text-shadow: 2px 2px #f0e68c;
+    margin-bottom: 30px;
+    cursor: pointer; /* Para interacción de colores */
+}
+
+/* Galería de letras */
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Imágenes de letras */
+#galeria img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 3px solid #ffb6c1;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+#galeria img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #ffa500;
+}
