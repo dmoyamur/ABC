@@ -14,8 +14,10 @@ const t=document.getElementById("titulo")
 t.addEventListener("click",()=>{
     colorfondo(t);
 })
-const imagen=document.querySelector("galeria img");
-imagen.array.forEach((img) => {
-    img.style.borderColor=colorAleatorio();
-    img.style.boxshadow="0 0 18px ${colorAleatorio()}";
-});
+const imagen = document.querySelectorAll('#galeria img');
+imagen.forEach((img) => {
+    img.addEventListener('click', () => {
+        img.style.borderColor = colorAleatorio();
+        img.style.boxShadow = `0 0 18px ${colorAleatorio()}`;
+    });
+})
